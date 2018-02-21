@@ -40,8 +40,10 @@ public class FichaVehiculo extends javax.swing.JFrame {
         jTextField4 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 51, 51));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setForeground(java.awt.Color.red);
 
-        jTextField1.setText("jTextField1");
         jTextField1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jTextField1MouseEntered(evt);
@@ -68,21 +70,23 @@ public class FichaVehiculo extends javax.swing.JFrame {
 
         jLabel5.setText("Año");
 
-        jTextField2.setText("jTextField1");
         jTextField2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jTextField2MouseEntered(evt);
             }
         });
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
 
-        jTextField3.setText("jTextField1");
         jTextField3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jTextField3MouseEntered(evt);
             }
         });
 
-        jTextField4.setText("jTextField1");
         jTextField4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jTextField4MouseEntered(evt);
@@ -171,14 +175,16 @@ public class FichaVehiculo extends javax.swing.JFrame {
         String modelo = jTextField3.getText();
         String año = jTextField4.getText();
         
-        moto.marca = marca;
-        moto.setCilindraje(Integer.parseInt(cilindraje));
-        moto.setModelo(modelo);
-        moto.setAño(Integer.parseInt(año));
-        
-        
-        
+        jTextField2.setText(marca);
+        jTextField3.setText(marca);
+  
+      
+
     }//GEN-LAST:event_jButton1MouseClicked
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
 
     /**
      * @param args the command line arguments
