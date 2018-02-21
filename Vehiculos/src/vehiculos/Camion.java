@@ -7,7 +7,7 @@ package vehiculos;
 
 /**
  *
- * @author Estudiantes
+ * @author Carlos Lopez
  */
 public class Camion extends Vehiculo{
     
@@ -18,6 +18,4 @@ public class Camion extends Vehiculo{
     public String descargar(){
         return "Camión descargando";
     }
-
-    
 }

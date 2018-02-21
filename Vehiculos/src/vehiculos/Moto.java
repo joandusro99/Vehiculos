@@ -7,7 +7,7 @@ package vehiculos;
 
 /**
  *
- * @author Estudiantes
+ * @author Carlos Lopez
  */
 public class Moto extends Vehiculo{
     @Override

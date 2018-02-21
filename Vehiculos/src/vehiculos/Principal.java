@@ -4,10 +4,10 @@
  * and open the template in the editor.
  */
 package vehiculos;
-
+import Parqueadero.*;
 /**
  *
- * @author Estudiantes
+ * @author Carlos Lopez
  */
 public class Principal {
     
@@ -17,6 +17,10 @@ public class Principal {
         
         System.out.println(mot.acelerar());
         System.out.println(cam.acelerar());
+        FichaVehiculo f = new FichaVehiculo();
+        f.setVisible(true);
+        mot = f.moto;
+        
          
         
     }

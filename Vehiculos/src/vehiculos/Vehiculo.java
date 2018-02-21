@@ -7,7 +7,7 @@ package vehiculos;
 
 /**
  *
- * @author Estudiantes
+ * @author Carlos Lopez
  */
 public class Vehiculo {
     public String marca;
@@ -22,4 +22,30 @@ public class Vehiculo {
     public String frenar(){
         return "Vehiculo frenando";
     }
+
+    public int getCilindraje() {
+        return cilindraje;
+    }
+
+    public void setCilindraje(int cilindraje) {
+        this.cilindraje = cilindraje;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public int getAño() {
+        return año;
+    }
+
+    public void setAño(int año) {
+        this.año = año;
+    }
+    
+    
 }
