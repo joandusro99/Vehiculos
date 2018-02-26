@@ -13,12 +13,18 @@ import principal.Moto;
  */
 public class FichaVehiculo extends javax.swing.JFrame {
 
-    
-    Moto miMoto=new Moto();
+    Moto misMotos[] = new Moto[50];
+
+    Moto miMoto = new Moto();
+public FichaVehiculo(){
+    for(int i=0;i<50;i++);{
+    misMotos[i] = new Moto();
+}
+}
     /**
      * Creates new form FichaVehiculo
      */
-    public FichaVehiculo() {
+     {
         initComponents();
     }
 
@@ -111,10 +117,10 @@ public class FichaVehiculo extends javax.swing.JFrame {
 
     private void guardarfMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_guardarfMouseClicked
 
-        miMoto.marca=Marcaf.getText();
-        miMoto.cilindraje=Integer.parseInt(cilindrajef.getText());
-        miMoto.modelo=modelof.getText();
-        miMoto.año=Integer.parseInt(añof.getText());
+        miMoto.marca = Marcaf.getText();
+        miMoto.cilindraje = Integer.parseInt(cilindrajef.getText());
+        miMoto.modelo = modelof.getText();
+        miMoto.año = Integer.parseInt(añof.getText());
         // TODO add your handling code here:
     }//GEN-LAST:event_guardarfMouseClicked
 
